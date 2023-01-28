@@ -18,7 +18,7 @@ export default function Home({data}) {
 
 export async function getServerSideProps() {
   const { events_categories } = await import(
-    "/Users/This PC/Desktop/NextjsLab/NextjsClass/class101/events_app/data/data.json"
+    "../data/data.json"
   );
 
   return {

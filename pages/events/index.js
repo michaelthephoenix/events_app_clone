@@ -7,8 +7,8 @@ const EventsPage = ({data}) => {
 export default EventsPage;
 
 
-export async function getStaticProps(c) {
-  const { events_categories } = await import("/Users/This PC/Desktop/NextjsLab/NextjsClass/class101/events_app/data/data.json");
+export async function getStaticProps() {
+  const { events_categories } = await import("../../data/data.json");
 
   return {
     props: {
